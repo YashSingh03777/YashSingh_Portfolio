@@ -85,7 +85,7 @@ export default function Home() {
 
         {/* ✅ Fixed Button */}
         <button
-          onClick={scrollToProjects}
+          onClick={Projects.jsx}
           className="btn btn-warning fw-semibold px-4 py-2"
         >
           View My Projects
