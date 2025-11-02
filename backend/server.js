@@ -18,7 +18,7 @@ const server = createServer(app);
 // ---------- Middleware ----------
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "*", // your frontend URL
+    origin: process.env.CLIENT_URL || "*", // your frontend domain (e.g. https://yash-portfolio.netlify.app)
     methods: ["GET", "POST"],
   })
 );
@@ -28,7 +28,7 @@ app.use(express.json());
 app.use("/api/contact", contactRoutes);
 app.use("/api/questions", questionRoutes);
 
-// ✅ Simple test route (so browser GET works)
+// ✅ Simple test route (for quick Render check)
 app.get("/", (req, res) => {
   res.json({ message: "🚀 Portfolio backend running successfully!" });
 });
@@ -54,13 +54,13 @@ io.on("connection", (socket) => {
     });
   });
 
-  // Chat message event
+  // Chat message
   socket.on("chat-message", (msg) => {
     console.log(`📨 Message from ${msg.sender}: ${msg.text}`);
     socket.broadcast.emit("chat-message", msg);
   });
 
-  // Disconnect event
+  // Disconnect
   socket.on("disconnect", () => {
     console.log(`❌ User disconnected: ${socket.id}`);
   });
@@ -68,7 +68,10 @@ io.on("connection", (socket) => {
 
 // ---------- DATABASE CONNECTION ----------
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
