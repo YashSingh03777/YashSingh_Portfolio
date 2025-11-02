@@ -82,14 +82,6 @@ export default function Home() {
           I create modern, responsive, and user-friendly web applications with
           passion and precision.
         </p>
-
-        {/* ✅ Fixed Button */}
-        <button
-          onClick={Projects.jsx}
-          className="btn btn-warning fw-semibold px-4 py-2"
-        >
-          View My Projects
-        </button>
       </div>
     </section>
   );
