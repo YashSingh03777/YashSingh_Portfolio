@@ -15,7 +15,7 @@ export default function Home() {
       <div className="bg-dark bg-opacity-75 p-5 rounded shadow-lg">
         {/* Profile Image */}
         <img
-          src="public/YashSingh.jpg"
+          src="/YashSingh.jpg"
           alt="Profile"
           className="rounded-circle mb-4 border border-3 border-warning"
           style={{ width: "150px", height: "150px", objectFit: "cover" }}

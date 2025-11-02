@@ -8,7 +8,7 @@ export default function About() {
           {/* Left Side – Profile Image */}
           <div className="col-md-5 text-center mb-4 mb-md-0">
             <img
-              src="public/YashChandel.jpg"
+              src="/YashChandel.jpg"
               alt="Yash Singh"
               className="img-fluid rounded-circle border border-3 border-warning shadow"
               style={{ width: "250px", height: "250px", objectFit: "cover" }}
