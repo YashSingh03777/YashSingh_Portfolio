@@ -8,15 +8,15 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-6">
 
-          {/* NextMeet Project */}
+          {/* TradeEasy Video Conferencing Project */}
           <div className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-            <h3 className="text-xl text-yellow-400 font-bold mb-2">🎥 Next Meet Video App</h3>
+            <h3 className="text-xl text-yellow-400 font-bold mb-2">🎥 TradeEasy Live Meet</h3>
             <p className="text-gray-300 mb-4">
-              Real-time video conferencing platform using Next.js and WebRTC.
+              Real-time video conferencing module integrated inside TradeEasy using WebRTC & Node.js.
             </p>
             <div className="flex gap-3">
               <a
-                href="https://nextmeetfrontend.onrender.com"
+                href="https://nextmeetfrontend.onrender.com"   // Your live meet link
                 target="_blank"
                 rel="noreferrer"
                 className="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 transition"
@@ -24,7 +24,7 @@ export default function Projects() {
                 🔗 Live Demo
               </a>
               <a
-                href="https://github.com/YashSingh03777/Next_Video_Meet"
+                href="https://github.com/YashSingh03777/Next_Video_Meet"  // GitHub of meet feature
                 target="_blank"
                 rel="noreferrer"
                 className="border border-gray-400 text-gray-200 px-4 py-2 rounded hover:bg-gray-700 transition"

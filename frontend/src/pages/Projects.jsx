@@ -140,6 +140,14 @@ export default function Projects() {
                 </div>
                 <div>
                   <a
+                    href="https://trade-frontend-d9m4.onrender.com"
+                    target="_blank"
+                    className="btn btn-warning btn-sm me-2"
+                    rel="noreferrer"
+                  >
+                    🔗 Live Demo
+                  </a>
+                  <a
                     href="https://github.com/YashSingh03777/TRADE_STOCK_EASY"
                     target="_blank"
                     className="btn btn-outline-light btn-sm me-2"
@@ -157,6 +165,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
