@@ -42,7 +42,7 @@ export default function Footer() {
           <i className="bi bi-envelope-fill me-2"></i> yashsingh93804@gmail.com
         </p>
         <p className="mb-2">
-          <i className="bi bi-telephone-fill me-2"></i> +91+ --
+          <i className="bi bi-telephone-fill me-2"></i> +91+ 9301735225
         </p>
 
         {/* Copyright */}
